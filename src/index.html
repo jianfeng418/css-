@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href='./css/blue.css' rel='stylesheet' type='text/css' id='blueStyle'></link>
+	<link href='./css/red.css' rel='alternate stylesheet' type='text/css' id='redStyle'></link>
+	<script src = './index.js'></script>
+
+</head>
+<body>
+	<div class='wrapDiv'>
+		<p>利用原生rel属性切换css文件换肤示例</p>
+	</div>	
+	<input id='blue' type='radio' value='blueStyle' checked name='cssStyle'></input>
+	<label for='blue'>blue</label>
+	<input id='red' type='radio' value='redStyle' name='cssStyle'></input>
+	<label for='red'>red</label>
+</body>
+	<style>
+		.wrapDiv{
+			border:1px solid blue;
+			width:200px;
+			height:200px;
+		}
+	</style>
+</html>
